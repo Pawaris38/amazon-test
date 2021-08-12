@@ -7,6 +7,13 @@
 body {
     font-family: "Poppins",sans-serif;
     margin: 0;
+    background-image: url("bg/bg1.jpg"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 100px;
+}
+body.active{
+    background-image: url("bg/bg2.jpg"); 
 }
 
 .header1 {
@@ -28,7 +35,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 6rem;
+    width: 6.5rem;
 }
 .delivery:hover{
     border-style: ridge;
@@ -45,8 +52,8 @@ body {
     justify-content: center;
     align-items: center;
     padding: 0.3rem;
-    margin: 0.5rem 1rem 0.5rem 0.2rem;
-    width: 50rem;
+    margin: 0.5rem 3.5rem 0.5rem 3.2rem;
+    width: 46rem;
 }
 .search{
     display: flex;
@@ -60,8 +67,8 @@ body {
     cursor: pointer;
     height: 100%;
 }
-.search:hover{
-    background-color: rgb(192, 189, 189);
+.container:hover{
+    background-color: rgb(255, 166, 0);
 }
 .glass{
     display: flex;
@@ -75,19 +82,31 @@ body {
     border-bottom-right-radius: 0.3rem; 
     cursor: pointer;
 }
+.glass:hover{
+    background-color: rgb(235, 156, 10);
+}
 .country{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1.5rem;
-    cursor: pointer;
+    width: 4%;
 }
 .account,.return,.cart{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 4rem;
-    margin-left: 1.5rem;
+    
+    padding: 0.1rem;
+    width: 7%;
+}
+.account{
+    width: 10%;
+}
+.country:hover, .account:hover, .return:hover, .cart:hover, .menu:hover, .navbar p:hover{
+    border-style: ridge;
+    border-color: white;
+    cursor: pointer;
 }
 .account p,h3{
     margin: 0;
@@ -99,12 +118,40 @@ body {
 }
 .header2{
     display: flex;
-    height: 3rem;
-    background-color: #232f3e;
+    height: 2.5rem;
+    background-color: #34465c;
 }
 .menu{
-    padding: 0.5rem 1.5rem;
+    display: flex;
+    width: 4rem;
+    padding: 0.5rem 0rem 0.5rem 0.5rem;
+    font-size: 0.95rem;
+}
+.navbar{
+    display: flex;
+    padding: 0.5rem 0;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.90rem;
 }
 
-
-
+.navbar p{
+    padding: 0 0.5rem;
+}
+.containerarrow{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.arrow{
+    display: flex;
+    border-style: ridge;
+    border-color: white;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem;
+    height: 14rem;
+    width: 4.5rem;
+}
